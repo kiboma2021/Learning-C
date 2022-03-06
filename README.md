@@ -333,9 +333,24 @@ Another common way to create an array is to specify the size of the array and ad
 	}
 
 
+---STRINGS---
+
+	char greeting[]="Hello world";
+	printf("%s",greeting); //Hello world
+
+	printf("%c",greeting[0]);  //H
 
 
 
+	#include <stdio.h>
 
-
+	int main() {
+	  char greetings[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0'};
+	  char greetings2[] = "Hello World!";
+	  
+	  printf("%lu\n", sizeof(greetings)); //13
+	  printf("%lu\n", sizeof(greetings2)); //13
+	  
+	  return 0;
+	}
 
