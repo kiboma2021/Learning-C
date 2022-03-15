@@ -354,3 +354,148 @@ Another common way to create an array is to specify the size of the array and ad
 	  return 0;
 	}
 
+
+---USER INPUT---
+
+To get user input you use scanf() function
+
+
+	#include<stdio.h>
+	int main(){
+	int myNum;
+	printf("Type a number and press Enter\n");
+
+	scanf("%d",&myNum);
+
+	printf("Your number is: %d",myNum);
+	return 0;
+
+	}
+
+You can also get a string entered by the user
+
+	#include<stdio.h>
+	int main(){
+	char myString[30];
+	printf("Print enter a string and press Enter\n");
+	scanf("%s",myString);
+	printf("The entered string is:%s",myString);
+
+	return 0;
+	}
+
+
+---MEMORY ADDRESS---
+
+---POINTERS---
+
+
+---FUNCTIONS---
+
+A function is a block of code which only runs when called
+
+	void myFunction(){
+		//code to be executed
+	}
+
+myFunction - Name of the function
+
+void - Function does not have return value
+
+
+	#include<stdio.h>
+	void myFunction(){
+		printf("Function executed");
+	}
+	int main(){
+		myFunction();
+		myFunction();
+		
+		return 0;
+	}
+
+
+
+
+	#include<stdio.h>
+	void myFunction(char name[],int age[]){
+		printf("Hello %s, so you are now %d years old\n", name,age);
+	}
+	int main(){
+		myFunction("Ben",14);
+		myFunction("Jane",56);
+		return 0;
+	}
+
+		
+	#include<stdio.h>
+	int summations(int x, inty){
+		return x+y;
+	}
+	int main(){
+		 printf("Result is: %d", myFunction(5, 3));
+		 return 0;
+	}
+
+
+---RECURSION---
+
+Recursion is the technique of making a function call itself
+
+	#include <stdio.h>
+
+	int sum(int k);
+
+	int main() {
+	 int result = sum(10);
+	 printf("%d", result);
+	 return 0;
+	}
+
+	int sum(int k) {
+	 if (k > 0) {
+         return k + sum(k - 1); //sums all interges between 0 and 10
+	 } else {
+        return 0;
+    }
+    }		
+
+
+
+---NESTED WHILE LOOPS---
+They are while loops inside a while loop
+
+	#include<stdio.h>
+
+	/*
+	while (condition)
+	{
+	while(condition){
+	  statement;
+	  increment;
+	}
+	  statement;
+	  increment;
+	}
+	*/
+
+	main()
+	{
+	  
+	  int i=0, j;
+	  
+	  while(i<5)
+	  {
+	    j=0;
+	    while(j<3)
+	    {
+	      printf("2 ");
+	      j++;
+	    }
+	    printf("\n");
+	    i++;
+	  }
+	  return 0;
+	}
+
+
